@@ -1,0 +1,29 @@
+plan:
+    package: ./plans/staging
+name: staging
+inputs:
+    app.source:
+        dir:
+            path: ./todoapp
+    site.account.token:
+        secret: ENC[AES256_GCM,data:5iDUJVVMQeaptEa9+M+Qg5cSrPGv1lHZsoC31RryGjYUAqiIsJiaXN95oA==,iv:xWTMjkp8sbgP111g+hRmn5UVeBXoVqgm4BAHLADekjE=,tag:r07WMtmaLeh+nTMyTHHGew==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1gxwmtwahzwdmrskhf90ppwlnze30lgpm056kuesrxzeuyclrwvpsupwtpk
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBtb1lxWmtGYTl5RWVHSGhR
+            VDFXWndqNVBTY3E1MnF2cEJwTFNtMFM1VEZZClB3LzN6bnpNRXhTd1lOS3Y2R1hn
+            Q3BtNVAxbnJPSzFpbXFtNDM0d1ovaTQKLS0tIEoralhSR2RMSTQ4am9seU9iTERz
+            TWEwcjIvc2FSTlVlRTljZUZ5R2VDaTgKZ3WU5FHpEdqh3lM73WiNO5Nl7g9GAy0e
+            0Hxb7cPlEi2ILhpWuuhLfbL6ggn392C1s9R0X/9i3jipXuIJZbq5UA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2021-11-02T22:17:15Z"
+    mac: ENC[AES256_GCM,data:ti1rEepYEslprlipzPKZZUZx4LAyGKpoj/MOWDs+BoMXbEOn1CvUBaXtVs6Umyi7VllBqIAZo+OHeJRzj0/JONQTqKbHdlpQOvApORqT2VJRSfOp2d4vLUMa8m8LRh/y8AaMACChZvToDGeTjZwaP5fuC/l1aGwujjVhJdIGpoo=,iv:u04QHuHl4p7rz3SGeXokZSg93ueBJ/6otQJytl+4lpc=,tag:m4JjJt1BpAUW7yGfK/0oGw==,type:str]
+    pgp: []
+    encrypted_suffix: secret
+    version: 3.7.1
